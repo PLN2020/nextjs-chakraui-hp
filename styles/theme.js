@@ -14,16 +14,17 @@ const components = {
         variants: {
             'section-title': {
                 textDecoration: 'underline',
-                fontSize: 20,
+                fontSize: 24,
                 textUnderlineOffset: 6,
                 textDecorationColor: '#d7bcfa',
                 textDecorationThickness: 4,
                 marginTop: 3,
-                marginBottom: 4
+                marginBottom: 4,
+                scrollMarginTop: 73,
             },
             'skill-title': {
                 textDecoration: 'underline',
-                fontSize: 16,
+                fontSize: 18,
                 textUnderlineOffset: 6,
                 textDecorationColor: '#525252',
                 textDecorationThickness: 3,
@@ -34,14 +35,15 @@ const components = {
     },
     Link: {
         baseStyle: props => ({
-            color: mode('#3d7aed', '#ff63c3')(props),
+            color: mode('black', 'purple.400')(props),
             textUnderlineOffset: 3
         })
     }
 }
 
 const fonts = {
-    heading: "'Noto Sans'"
+    heading: `'Poppins', sans-serif`,
+    body: `'Noto Sans', sans-serif`,
 }
 
 const colors = {

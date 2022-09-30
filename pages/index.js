@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Hero from '../components/Hero/Hero'
+import Hero from '../components/Hero'
 import Navbar from '../components/Navbar/Navbar'
 import Toolkit from '../components/Toolkit/Toolkit'
 import Projects from '../components/Projects/Projects'
@@ -7,6 +7,7 @@ import Profile from '../components/Profile/Profile'
 import Photography from '../components/Photography/Photography'
 import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer'
+import { Container } from '@chakra-ui/react'
 
 export default function Home() {
 
@@ -20,11 +21,15 @@ export default function Home() {
 
       <Hero />
       <Navbar />
-      <Toolkit />
-      <Projects />
-      <Profile />
-      <Photography />
-      <Contact />
+      <Container
+        maxW={{sm:'100%', md:'container.lg'}}
+      >
+        <Toolkit />
+        <Projects />
+        <Profile />
+        <Photography />
+        <Contact />
+      </Container>
       <Footer />
     </div>
   )

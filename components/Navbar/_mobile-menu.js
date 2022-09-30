@@ -1,7 +1,7 @@
 import { Box, IconButton, Link, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import React from "react";
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { NavData } from "./navbar-data";
+import { NavData } from "../../data/navbar-data";
 import NextLink from 'next/link'
 
 const MobileMenu = () => {

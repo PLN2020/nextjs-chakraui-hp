@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavData } from './navbar-data'
+import { NavData } from '../../data/navbar-data'
 import { Stack, Link } from '@chakra-ui/react'
 
 const DesktopMenu = () => {

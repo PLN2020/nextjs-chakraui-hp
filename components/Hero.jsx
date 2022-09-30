@@ -1,6 +1,6 @@
 import { Box, Heading, Highlight, Text } from '@chakra-ui/react'
 import React from 'react'
-import { HeroData } from './hero-data'
+import { HeroData } from '../data/hero-data'
 
 const Hero = () => {
     return (
