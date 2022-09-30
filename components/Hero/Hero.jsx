@@ -28,17 +28,17 @@ const Hero = () => {
             />
 
             <Box
-                text="white"
+                // text="white"
                 zIndex="2"
                 p={5}
                 mt="-10rem"
                 ml={{ md: "-20rem" }}
             >
-                <Heading size="2xl">{HeroData.heading}</Heading>
-                <Text fontSize="lg">
+                <Heading color="white" size="2xl">{HeroData.heading}</Heading>
+                <Text color="white" fontSize="lg">
                     <Highlight 
                         query="Web Developer" 
-                        styles={{ px: "1", py: "1", fontWeight: "bold", bg: "purple.200"}}
+                        styles={{ px: "0.5", py: "0.5", fontWeight: "bold", bg: "purple.200"}}
                     >
                         {HeroData.subtext}
                     </Highlight>

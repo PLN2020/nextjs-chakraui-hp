@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar/Navbar'
 import Toolkit from '../components/Toolkit/Toolkit'
 import Projects from '../components/Projects/Projects'
 import Profile from '../components/Profile/Profile'
-import Photography from '../components/Photography/Photograhpy'
+import Photography from '../components/Photography/Photography'
 import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer'
 
