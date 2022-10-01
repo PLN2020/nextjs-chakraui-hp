@@ -13,7 +13,7 @@ export const ToolkitData = [
             icon: <Icon as={FaReact} />
         },
         {
-            name: "Next.js",
+            name: "Next.JS",
             icon: <Icon as={SiNextdotjs} />
         },
         {

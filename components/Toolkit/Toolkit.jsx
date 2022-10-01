@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, SimpleGrid, UnorderedList, ListItem, Heading, Button, Container } from '@chakra-ui/react'
+import { Box, SimpleGrid, UnorderedList, ListItem, Heading, Button, Container, Text } from '@chakra-ui/react'
 import { ToolkitData } from '../../data/toolkit-data'
 
 const Toolkit = () => {
@@ -46,21 +46,12 @@ const Toolkit = () => {
                                 <Heading as="h3" variant="skill-title">{item.type}</Heading>
                             </Box>
 
-                            <Box>
+                            <Box display="block">
                                 {item.list.map((skill) => {
                                     return (
-                                        <UnorderedList
-                                            key={item.list.skill}
-                                            display='flex'
-                                            justifyContent='center'
-                                            alignItems='center'
-                                        >
-                                            <ListItem listStyleType='none' pr={4}>
-                                                <Button variant="ghost" leftIcon={skill.icon} cursor="default" fontSize="1.2em">
-                                                    {skill.name}
-                                                </Button>
-                                            </ListItem>
-                                        </UnorderedList>
+                                        <Text textAlign="center">
+                                            {skill.icon}&nbsp;{skill.name}
+                                        </Text>
                                     )
                                 })}
                             </Box>

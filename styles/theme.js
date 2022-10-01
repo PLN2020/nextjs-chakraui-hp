@@ -18,9 +18,9 @@ const components = {
                 textUnderlineOffset: 6,
                 textDecorationColor: '#d7bcfa',
                 textDecorationThickness: 4,
-                marginTop: 3,
-                marginBottom: 4,
-                scrollMarginTop: 73,
+                marginTop: 70,
+                marginBottom: 10,
+                scrollMarginTop: 75,
             },
             'skill-title': {
                 textDecoration: 'underline',

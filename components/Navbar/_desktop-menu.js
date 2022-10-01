@@ -19,6 +19,7 @@ const DesktopMenu = () => {
                     <Link 
                         href={"/#" + item.toLowerCase()}
                         scroll={true}
+                        fontWeight="bold"
                         transition="all 0.2s ease-out"
                         _hover={{
                             cursor: "pointer",

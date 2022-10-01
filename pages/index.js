@@ -16,14 +16,12 @@ export default function Home() {
       <Head>
         <title>Patrick-Lam Nguyen</title>
         <meta name="Patrick-Lam's Portfolio" content="Created with NextJS and TailwindCSS" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/coding.ico" />
       </Head>
 
       <Hero />
       <Navbar />
-      <Container
-        maxW={{sm:'100%', md:'container.lg'}}
-      >
+      <Container maxW={{sm:'100%', md:'container.lg'}}>
         <Toolkit />
         <Projects />
         <Profile />
