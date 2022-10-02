@@ -19,7 +19,7 @@ const MobileMenu = () => {
                 <MenuList bgColor="white">
                     {NavData.tabs.map((item) => {
                         return (
-                            <NextLink href={"/#" + item.toLowerCase()} scroll={true} passHref>
+                            <NextLink href={"/#" + item.toLowerCase()} scroll={true} passHref key={item}>
                                 <MenuItem as={Link}>{item}</MenuItem>
                             </NextLink>
                         )

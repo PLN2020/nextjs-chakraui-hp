@@ -48,7 +48,7 @@ const Toolkit = () => {
                             <Box display="block">
                                 {item.list.map((skill) => {
                                     return (
-                                        <Text textAlign="center">
+                                        <Text textAlign="center" key={skill}>
                                             {skill.icon}&nbsp;{skill.name}
                                         </Text>
                                     )
