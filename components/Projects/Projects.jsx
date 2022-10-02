@@ -16,7 +16,7 @@ const Projects = () => {
 
             <SimpleGrid
                 columns={[1, 2, 2]}
-                spacingX="20px"
+                spacingX="30px"
                 spacingY="20px"
             >
                 {ProjectData.map((item)=> {
@@ -30,6 +30,7 @@ const Projects = () => {
                             stack={item.stack} 
                             sourceUrl={item.sourceUrl}
                             linkUrl={item.linkUrl}
+                            key={item}
                         />
                     )
                 })}

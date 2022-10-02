@@ -9,7 +9,6 @@ const Toolkit = () => {
                 as="h3" 
                 variant="section-title"
                 id='toolkit'
-                mt="73px"
             >
                 Toolkit
             </Heading>

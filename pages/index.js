@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Patrick-Lam Nguyen</title>
-        <meta name="Patrick-Lam's Portfolio" content="Created with NextJS and TailwindCSS" />
+        <meta name="Patrick-Lam's Portfolio" content="Created with NextJS and Chakra-UI" />
         <link rel="icon" href="/coding.ico" />
       </Head>
 

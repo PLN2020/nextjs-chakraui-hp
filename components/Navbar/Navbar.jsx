@@ -34,7 +34,7 @@ const Navbar = () => {
                         <Logo />
                     </Heading>
                 </Flex>
-
+                
                 <DesktopMenu />
 
                 {/* Mobile Menu */}

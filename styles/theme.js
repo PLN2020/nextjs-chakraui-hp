@@ -19,7 +19,7 @@ const components = {
                 textDecorationColor: '#d7bcfa',
                 textDecorationThickness: 4,
                 marginTop: 70,
-                marginBottom: 10,
+                marginBottom: 5,
                 scrollMarginTop: 75,
             },
             'skill-title': {

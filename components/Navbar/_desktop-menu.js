@@ -16,7 +16,8 @@ const DesktopMenu = () => {
         >
             {NavData.tabs.map((item) => {
                 return (
-                    <Link 
+                    <Link
+                        key={item} 
                         href={"/#" + item.toLowerCase()}
                         scroll={true}
                         fontWeight="bold"
