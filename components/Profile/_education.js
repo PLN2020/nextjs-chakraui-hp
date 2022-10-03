@@ -15,7 +15,7 @@ const Education = () => {
 
             {EducationData.map((item) => {
                 return (
-                    <Box mb="1.5em" key={item}>
+                    <Box key={item}>
                         <Heading as="h3" variant="skill-title" ml="1em">
                             {item.name}&nbsp;/&nbsp;{item.year}
                         </Heading>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, SimpleGrid, UnorderedList, ListItem, Heading, Button, Container, Text } from '@chakra-ui/react'
+import { Box, SimpleGrid, Heading, Text } from '@chakra-ui/react'
 import { ToolkitData } from '../../data/toolkit-data'
 
 const Toolkit = () => {
