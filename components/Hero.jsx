@@ -1,6 +1,7 @@
-import { Box, Heading, Highlight, Text } from '@chakra-ui/react'
+import { Box, Button, Heading, Highlight, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 import { HeroData } from '../data/hero-data'
+import Socials from './Socials'
 
 const Hero = () => {
     return (
@@ -28,23 +29,25 @@ const Hero = () => {
             />
 
             <Box
-                // text="white"
                 zIndex="2"
                 p={5}
                 mt="-10rem"
                 ml={{ md: "-20rem" }}
             >
-                <Heading color="white" size="2xl">{HeroData.heading}</Heading>
-                <Text color="white" fontSize="lg">
-                    <Highlight 
-                        query="Web Developer" 
-                        styles={{ px: "0.5", py: "0.5", fontWeight: "bold", bg: "purple.200"}}
-                    >
-                        {HeroData.subtext}
-                    </Highlight>
-                </Text>
-
+                <Box ml={1.5}>
+                    <Heading color="white" size="2xl">{HeroData.heading}</Heading>
+                    <Text color="white" fontSize="lg">
+                        <Highlight 
+                            query="Web Developer" 
+                            styles={{ px: "0.5", py: "0.5", fontWeight: "bold", bg: "purple.200"}}
+                        >
+                            {HeroData.subtext}
+                        </Highlight>
+                    </Text>
+                </Box>
                 {/* Socials go here */}
+                <Box mt="1em"><Socials /></Box>
+                
             </Box>
         </Box>
     )

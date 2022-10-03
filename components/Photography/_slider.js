@@ -37,16 +37,18 @@ function Slider() {
                             as={motion.div}
                             minH="40rem"
                             minW={{ base: "100%", md: "30rem"}}
-                            p="20px"
+                            p="40px"
                         >
                             <Image 
                                 src={image.url} 
                                 alt={image.title} 
                                 w="100%"
                                 h="100%"
-                                borderRadius="lg"
+                                borderRadius="2xl"
                                 objectFit="cover"
                                 pointerEvents="none"
+                                // boxShadow="0.3rem 0.4rem 0.4rem rgba(0,0,0,0.4)"
+                                placeholder="blur"
                             />
                         </Box>
                     )
