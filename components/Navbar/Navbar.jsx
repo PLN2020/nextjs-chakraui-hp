@@ -20,7 +20,7 @@ const Navbar = () => {
             display="flex"
         >
             <Container 
-                maxW="container.lg" 
+                maxW="container.xl" 
                 m="auto"
                 display="flex"
                 justifyContent="space-between"

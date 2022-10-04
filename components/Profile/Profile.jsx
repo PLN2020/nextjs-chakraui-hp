@@ -1,4 +1,4 @@
-import { Box, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Box, Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import React from 'react'
 import AboutMe from './_about-me'
 import Education from './_education'

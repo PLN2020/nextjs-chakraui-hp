@@ -1,7 +1,8 @@
-import { Box, Button, Heading, Highlight, Link, Text } from '@chakra-ui/react'
+import { Box, Heading, Highlight, Text, Button } from '@chakra-ui/react'
 import React from 'react'
 import { HeroData } from '../data/hero-data'
 import Socials from './Socials'
+import NextLink from 'next/link'
 
 const Hero = () => {
     return (
@@ -34,7 +35,7 @@ const Hero = () => {
                 mt="-10rem"
                 ml={{ md: "-20rem" }}
             >
-                <Box ml={1.5}>
+                <Box ml="2px">
                     <Heading color="white" size="2xl">{HeroData.heading}</Heading>
                     <Text color="white" fontSize="lg">
                         <Highlight 
@@ -47,7 +48,6 @@ const Hero = () => {
                 </Box>
                 {/* Socials go here */}
                 <Box mt="1em"><Socials /></Box>
-                
             </Box>
         </Box>
     )

@@ -5,9 +5,9 @@ import Toolkit from '../components/Toolkit/Toolkit'
 import Projects from '../components/Projects/Projects'
 import Profile from '../components/Profile/Profile'
 import Photography from '../components/Photography/Photography'
-import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer'
 import { Container } from '@chakra-ui/react'
+import Contact from '../components/Contact'
 
 export default function Home() {
 
@@ -21,7 +21,7 @@ export default function Home() {
 
       <Hero />
       <Navbar />
-      <Container maxW={{sm:'100%', md:'container.lg'}}>
+      <Container maxW={{sm:'100%', md:'container.xl'}}>
         <Toolkit />
         <Projects />
         <Profile />

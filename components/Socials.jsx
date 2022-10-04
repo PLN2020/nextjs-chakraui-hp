@@ -1,10 +1,9 @@
-import { Box, Icon, Link } from "@chakra-ui/react"
+import { Box, HStack, Link } from "@chakra-ui/react"
 import { SocialsData } from "../data/socials-data"
-import { IoLogoFlickr, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const Socials = () => {
     return (
-        <Box fontSize="40px" display="flex">
+        <HStack fontSize="40px" spacing="16px">
             {SocialsData.map((item) => {
                 return (
                     <Link
@@ -12,16 +11,16 @@ const Socials = () => {
                         href={item.url}
                         target="_blank"
                         color="purple.200"
+                        transition="all ease-in 200ms"
                         _hover={{
                             color: "purple.600"
                         }}
-                        m={1}
                     >
                         {item.icon}
                     </Link>
                 )
             })}
-        </Box>
+        </HStack>
     )
 }
 
