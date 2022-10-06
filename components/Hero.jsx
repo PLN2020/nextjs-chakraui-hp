@@ -2,7 +2,6 @@ import { Box, Heading, Highlight, Text, Button } from '@chakra-ui/react'
 import React from 'react'
 import { HeroData } from '../data/hero-data'
 import Socials from './Socials'
-import NextLink from 'next/link'
 
 const Hero = () => {
     return (
@@ -33,7 +32,7 @@ const Hero = () => {
                 zIndex="2"
                 p={5}
                 mt="-10rem"
-                ml={{ md: "-20rem" }}
+                ml={{ lg: "-20rem" }}
             >
                 <Box ml="2px">
                     <Heading color="white" size="2xl">{HeroData.heading}</Heading>

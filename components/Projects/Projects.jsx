@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Box, Heading, SimpleGrid } from '@chakra-ui/react'
 import ProjectCard from './_project-card'
 import { ProjectData } from '../../data/project-data'
 
@@ -17,8 +17,7 @@ const Projects = () => {
             <Box display="flex" alignItems="center" justifyContent="center">
             <SimpleGrid
                 columns={[1, 2, 2]}
-                spacingX="8em"
-                spacingY="4em"
+                spacing="40px"
             >
                 {ProjectData.map((item)=> {
                     return (

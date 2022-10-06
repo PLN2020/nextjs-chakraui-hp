@@ -2,7 +2,17 @@ import { Box } from "@chakra-ui/react"
 
 const Footer = () => {
     return (
-        <Box align="center" opacity={0.4} fontSize="sm" mt="4em" mb="2em" bgColor="whiteAlpha.200">
+        <Box 
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            // opacity={0.4} 
+            fontSize="sm" 
+            w="100%"
+            h="50px"
+            bgColor="purple.300"
+            mt="4em"
+        >
             &copy; {new Date().getFullYear()} Patrick-Lam Nguyen
         </Box>
     )
