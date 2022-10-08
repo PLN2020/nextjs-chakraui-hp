@@ -1,6 +1,7 @@
 import { Box, Heading } from '@chakra-ui/react'
 import React from 'react'
-import Slider from './_slider'
+import Carousel from './_carousel'
+import { PhotoData } from '../../data/photo-data'
 
 const Photography = () => {
     return (
@@ -9,11 +10,14 @@ const Photography = () => {
                 as="h3"
                 variant="section-title"
                 id="photography"
+                align='center'
             >
                 Photography
             </Heading>
 
-            <Slider />
+            <Box display='flex' justifyContent='center'>
+                <Carousel images={PhotoData} />
+            </Box>
         </Box>
     )
 }

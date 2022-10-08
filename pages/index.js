@@ -6,7 +6,7 @@ import Projects from '../components/Projects/Projects'
 import Profile from '../components/Profile/Profile'
 import Photography from '../components/Photography/Photography'
 import Footer from '../components/Footer'
-import { Container } from '@chakra-ui/react'
+import { Center, Container } from '@chakra-ui/react'
 import Contact from '../components/Contact'
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
         <Projects />
         <Profile />
         <Photography />
-        <Contact />
+        <Center><Contact /></Center>
       </Container>
       <Footer />
     </div>

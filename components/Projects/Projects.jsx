@@ -10,14 +10,15 @@ const Projects = () => {
                 as="h3" 
                 variant="section-title"
                 id='projects'
+                textAlign='center'
             >
                 Projects
             </Heading>
 
-            <Box display="flex" alignItems="center" justifyContent="center">
             <SimpleGrid
-                columns={[1, 2, 2]}
+                columns={[1, 1, 2]}
                 spacing="40px"
+                placeItems='start center'
             >
                 {ProjectData.map((item)=> {
                     return (
@@ -35,7 +36,6 @@ const Projects = () => {
                     )
                 })}
             </SimpleGrid>
-            </Box>
         </>
     )
 }

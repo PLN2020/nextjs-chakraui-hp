@@ -4,7 +4,7 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const AboutMe = () => {
     return (
-        <Box>
+        <Box maxW='lg'>
             <Heading 
                 as="h3" 
                 variant="section-title"

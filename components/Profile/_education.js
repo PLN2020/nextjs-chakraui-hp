@@ -4,7 +4,7 @@ import React from 'react'
 
 const Education = () => {
     return (
-        <Box>
+        <Box maxW='lg'>
             <Heading 
                 as="h3" 
                 variant="section-title"

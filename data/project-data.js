@@ -1,6 +1,7 @@
 import { SiRubyonrails, SiHeroku, SiNextdotjs, SiChakraui } from "react-icons/si"
 import { FaHtml5, FaCss3, FaJs } from "react-icons/fa"
 import { Link } from "@chakra-ui/react"
+import { ExternalLinkIcon } from "@chakra-ui/icons"
 
 export const ProjectData = [
     {
@@ -63,6 +64,13 @@ export const ProjectData = [
             },
         ],
         sourceUrl: "https://github.com/AntoineBoucherCodes/Braid",
-        linkUrl: "Website demo no longer available.",
+        linkUrl: <Link 
+                    href="https://www.youtube.com/watch?v=7VBFMMoaGkA&t=1528s" 
+                    target="_blank" 
+                    fontSize='sm' 
+                    color='purple.300'
+                >
+                    Watch our demo on Youtube <ExternalLinkIcon />
+                </Link>,
     }
 ]

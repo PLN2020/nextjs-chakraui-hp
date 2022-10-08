@@ -1,10 +1,11 @@
 import { useRef, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Box, Image } from '@chakra-ui/react'
+import { Box, Image, Progress } from '@chakra-ui/react'
 import { PhotoData } from '../../data/photo-data'
 
 function Slider() {
 
+    let sliderPosition = 0
     const [width, setWidth] = useState(0);
     const carousel = useRef();
 
@@ -28,6 +29,11 @@ function Slider() {
                 as={motion.div} 
                 drag="x"
                 dragConstraints={{ right: 0, left: -width }}
+                onDrag={
+                    (event, info) => (
+                            console.log(info.point.x)
+                        )
+                }
                 display="flex" 
             >
                 {PhotoData.map((image) => {
@@ -54,6 +60,10 @@ function Slider() {
                     )
                 })}
             </Box>
+            <Progress 
+                value={sliderPosition} 
+                colorScheme="purple"
+            />
         </Box>
     )
 }

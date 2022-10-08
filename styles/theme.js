@@ -14,12 +14,12 @@ const components = {
         variants: {
             'section-title': {
                 textDecoration: 'underline',
-                fontSize: 24,
+                fontSize: 36,
                 textUnderlineOffset: 6,
                 textDecorationColor: '#d7bcfa',
                 textDecorationThickness: 4,
-                marginTop: 70,
-                marginBottom: 5,
+                marginTop: 90,
+                marginBottom: 10,
                 scrollMarginTop: 75,
             },
             'skill-title': {
@@ -38,7 +38,7 @@ const components = {
             color: mode('black', 'purple.400')(props),
             textUnderlineOffset: 3
         })
-    }
+    },
 }
 
 const fonts = {
