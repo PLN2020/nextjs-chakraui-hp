@@ -2,7 +2,8 @@ import { Box } from "@chakra-ui/react"
 
 const Footer = () => {
     return (
-        <Box 
+        <Box
+            as='footer' 
             display="flex"
             alignItems="center"
             justifyContent="center"

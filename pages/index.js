@@ -6,29 +6,28 @@ import Projects from '../components/Projects/Projects'
 import Profile from '../components/Profile/Profile'
 import Photography from '../components/Photography/Photography'
 import Footer from '../components/Footer'
-import { Container } from '@chakra-ui/react'
+import { Box, Container } from '@chakra-ui/react'
 import Contact from '../components/Contact'
 
 export default function Home() {
+    return (
+        <Box>
+            <Head>
+                <title>Patrick-Lam Nguyen</title>
+                <meta name="Patrick-Lam's Portfolio" content="Created with NextJS and Chakra-UI" />
+                <link rel="icon" href="/coding.ico" />
+            </Head>
 
-  return (
-    <div>
-      <Head>
-        <title>Patrick-Lam Nguyen</title>
-        <meta name="Patrick-Lam's Portfolio" content="Created with NextJS and Chakra-UI" />
-        <link rel="icon" href="/coding.ico" />
-      </Head>
-
-      <Hero />
-      <Navbar />
-      <Container maxW={{sm:'100%', md:'container.xl'}}>
-        <Toolkit />
-        <Projects />
-        <Profile />
-        <Photography />
-        <Container maxW='800px'><Contact /></Container>
-      </Container>
-      <Footer />
-    </div>
-  )
+            <Hero />
+            <Navbar />
+            <Container maxW={{sm:'100%', md:'container.xl'}}>
+                <Toolkit />
+                <Projects />
+                <Profile />
+                <Photography />
+                <Container maxW='800px'><Contact /></Container>
+            </Container>
+            <Footer />
+        </Box>
+    )
 }

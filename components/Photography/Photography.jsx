@@ -5,7 +5,7 @@ import { PhotoData } from '../../data/photo-data'
 
 const Photography = () => {
     return (
-        <Box>
+        <Box as='section'>
             <Heading
                 as="h3"
                 variant="section-title"

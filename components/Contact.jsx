@@ -4,7 +4,7 @@ import NextLink from 'next/link'
 
 const Contact = () => {
     return (
-        <Box>
+        <Box as='section'>
             <Heading
                 as="h3"
                 variant="section-title"

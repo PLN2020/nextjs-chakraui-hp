@@ -4,7 +4,7 @@ import { ToolkitData } from '../../data/toolkit-data'
 
 const Toolkit = () => {
     return (
-        <>
+        <Box as='section'>
             <Heading 
                 as="h3" 
                 variant="section-title"
@@ -59,7 +59,7 @@ const Toolkit = () => {
                     )
                 })}
             </SimpleGrid>
-        </>
+        </Box>
     )
 }
 

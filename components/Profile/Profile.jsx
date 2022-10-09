@@ -5,7 +5,7 @@ import Education from './_education'
 
 const Profile = () => {
     return (
-        <Box>
+        <Box as='section'>
             <SimpleGrid columns={[1, 2, 2]} spacing="40px" placeItems='start center'>
                 <Box><AboutMe /></Box>
                 <Box><Education /></Box>
