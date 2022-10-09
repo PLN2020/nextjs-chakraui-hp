@@ -22,6 +22,11 @@ export const PhotoData = [
         city: "Kanazawa"
     },
     {
+        url: "https://res.cloudinary.com/ditoikfqn/image/upload/v1651565841/NextJS-Portfolio/Japan/XT1A5895_eisd9n.jpg",
+        title: "Street Performers",
+        city: "Tokyo"
+    },
+    {
         url: "https://res.cloudinary.com/ditoikfqn/image/upload/v1651565840/NextJS-Portfolio/Japan/XT1A4117_szopqa.jpg",
         title: "Furikake",
         city: "Kanazawa"

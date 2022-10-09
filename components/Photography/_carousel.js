@@ -70,7 +70,7 @@ function Carousel({images}) {
                                 h='100%'
                                 display='flex'
                                 p='30px'
-                                alignItems='flex-end'
+                                alignItems='flex-start'
                             >
                                 <Heading 
                                     as="h2" 
@@ -109,7 +109,14 @@ function Carousel({images}) {
                     cursor='pointer'
                     onClick={slideLeft}
                 >
-                    <ChevronLeftIcon color='black' />
+                    <ChevronLeftIcon 
+                        color='black' 
+                        transition="all 0.2s ease-out"
+                        _hover={{
+                            color: 'purple.400',
+                            transform: 'scale(1.1)'
+                        }}
+                    />
                 </Box>            
 
                 <Box
@@ -128,7 +135,14 @@ function Carousel({images}) {
                     cursor='pointer'
                     onClick={slideRight}
                 >
-                    <ChevronRightIcon color='black'/>
+                    <ChevronRightIcon 
+                        color='black' 
+                        transition="all 0.2s ease-out"
+                        _hover={{
+                            color: 'purple.400',
+                            transform: 'scale(1.1)'
+                        }}
+                    />
                 </Box>
 
                 <Box
